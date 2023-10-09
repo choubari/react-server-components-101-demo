@@ -1,3 +1,15 @@
+## React Server Components Demo App
+
+I tried to create a similar app to the one described in this diagram, to showcase how client components and server components could work together in Next.js .
+
+This demo app is part of my **React Server Components 101** talk, which you can find [more details about it here](https://choubari.com/talks).
+
+<p align="center">
+  <img  src="public/dan-diagram.PNG">
+</p>
+
+---
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
