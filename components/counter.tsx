@@ -6,9 +6,9 @@ export default function Counter() {
   const [count, setCount] = useState(0);
 
   const incrementCount = () => {
+    console.log("count ", count + 1);
     setCount(count + 1);
   };
-
   return (
     <div className="p-2 flex items-baseline gap-3">
       <p className="mb-5">Count: {count}</p>

@@ -1,5 +1,3 @@
-"use state";
-
 import Counter from "./counter";
 
 type Comment = {
@@ -15,6 +13,7 @@ export default async function CommentsList({
 }: {
   comments: Comment[];
 }) {
+  console.log("here!!!!");
   return (
     <div>
       {comments.map((comment: Comment) => (
