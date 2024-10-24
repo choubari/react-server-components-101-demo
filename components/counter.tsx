@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Label from "./label";
 
-export default function Counter({ label }: { label: React.ReactNode }) {
+export default function Counter({ label }: { label?: React.ReactNode }) {
   const [count, setCount] = useState(0);
 
   const incrementCount = () => {
