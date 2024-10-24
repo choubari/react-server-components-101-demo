@@ -1,8 +1,9 @@
 "use client";
 
 import React, { useState } from "react";
+import Label from "./label";
 
-export default function Counter() {
+export default function Counter({ label }: { label: React.ReactNode }) {
   const [count, setCount] = useState(0);
 
   const incrementCount = () => {
@@ -11,7 +12,11 @@ export default function Counter() {
   };
   return (
     <button className="bg-blue-700 rounded p-1 px-2" onClick={incrementCount}>
-      Count:
+      {/* Will convert Label to Client boundary */}
+      {/* <Label /> */}
+
+      {/* Passing label as props will keep the component running on the server only */}
+      {label}
       {count}
     </button>
   );

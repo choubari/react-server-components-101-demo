@@ -1,4 +1,5 @@
 import Counter from "./counter";
+import Label from "./label";
 
 type Comment = {
   postId: number;
@@ -21,7 +22,7 @@ export default async function CommentsList({
           <div className="px-6 py-4">
             <div className="mb-2 flex items-baseline justify-between">
               <p className="font-bold text-xl">{comment.name}</p>
-              <Counter />
+              <Counter label={<Label />} />
             </div>
             <p className="text-gray-200 text-base">{comment.body}</p>
           </div>
