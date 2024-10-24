@@ -13,7 +13,7 @@ export default async function CommentsList({
 }: {
   comments: Comment[];
 }) {
-  console.log("here!!!!");
+  console.log("this console log should be on the server!!!!");
   return (
     <div>
       {comments.map((comment: Comment) => (
@@ -27,7 +27,7 @@ export default async function CommentsList({
           </div>
           <div className="px-6 pt-4 pb-2">
             <span className="inline-block bg-purple-400 rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">
-              comment {comment.id}
+              id: {comment.id}
             </span>
             <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
               by: {comment.email}

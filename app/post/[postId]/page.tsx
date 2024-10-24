@@ -58,8 +58,8 @@ export default async function Post(props: PageProps) {
           </span>
         </div>
       </div>
-      <h3 className="font-bold text-xl mb-2">Comments:</h3>
 
+      <h3 className="font-bold text-xl mb-2">Comments:</h3>
       <CommentsList comments={comments} />
     </div>
   );
