@@ -1,9 +1,13 @@
 "use client";
 
 import React, { useState } from "react";
-import Label from "./label";
+// import Label from "./label";
 
-export default function Counter({ label }: { label?: React.ReactNode }) {
+interface Props {
+  label?: React.ReactNode;
+}
+
+export default function Counter({ label }: Props) {
   const [count, setCount] = useState(0);
 
   const incrementCount = () => {
